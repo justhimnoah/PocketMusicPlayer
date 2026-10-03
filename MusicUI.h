@@ -25,9 +25,9 @@ class MusicUI {
                         uint8_t minute);
 
   UIAction evaluateTouch(int x, int y) const;
+  uint16_t resolveBackgroundColor(const BluetoothManager& bt) const;
 
  private:
   DisplayManager* display_;
-  uint16_t resolveBackgroundColor(const BluetoothManager& bt) const;
   static uint16_t colorFromString(const String& text);
 };
